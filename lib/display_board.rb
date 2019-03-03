@@ -2,7 +2,6 @@
 # out the current state.
 def display_board(board)
   # console.log(board.inspect)
-  for square in board do
-    
-  end
+  board.map! { |tile| " #{tile} " }
+  
 end
