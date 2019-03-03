@@ -6,10 +6,10 @@ def display_board(board)
     .map!.with_index { |tile, idx| idx % 3 === 1 ? "|#{tile}|" : tile }
     .map!.with_index { |tile, idx| [2,5].include?(idx) ? "#{tile}\n#{separator}" : tile }
     
-    
-  puts "#{board[0]}#{board[1]}#{board[2]}"
-  puts "-" * 11
-  puts "#{board[3]}#{board[4]}#{board[5]}"
-  puts "-" * 11
-  puts "#{board[6]}#{board[7]}#{board[8]}"
+  puts printed_board
+  # puts "#{board[0]}#{board[1]}#{board[2]}"
+  # puts "-" * 11
+  # puts "#{board[3]}#{board[4]}#{board[5]}"
+  # puts "-" * 11
+  # puts "#{board[6]}#{board[7]}#{board[8]}"
 end
