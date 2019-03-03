@@ -3,5 +3,6 @@
 def display_board(board)
   # console.log(board.inspect)
   board.map! { |tile| " #{tile} " }
+    .map! { |tile| 
   
 end
