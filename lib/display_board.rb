@@ -3,6 +3,6 @@
 def display_board(board)
   # console.log(board.inspect)
   board.map! { |tile| " #{tile} " }
-    .map! { |tile| 
-  
+    .map!.with_index { |tile, idx| idx % 3 === 1 ? "|#{tile}|" : tile }
+  console.log(board)
 end
