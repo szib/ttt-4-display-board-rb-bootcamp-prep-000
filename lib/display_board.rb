@@ -3,8 +3,8 @@
 def display_board(board)
   separator = "\n-----------\n"
   printed_board = board.map { |tile| " #{tile} " }
-    # .map.with_index { |tile, idx| [2,5].include?(idx) ? "#{tile}#{separator}" : tile }
     .map.with_index { |tile, idx| idx % 3 === 1 ? "|#{tile}|" : tile }
+    # .map.with_index { |tile, idx| [2,5].include?(idx) ? "#{tile}#{separator}" : tile }
     
   puts printed_board
     
