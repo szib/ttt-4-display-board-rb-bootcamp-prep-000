@@ -2,6 +2,6 @@
 # out the current state.
 def display_board(board)
   # console.log(board.inspect)
-  board.map!.with_index { |tile, idx| " #{tile} " }
+  board.map! { |tile| " #{tile} " }
   
 end
